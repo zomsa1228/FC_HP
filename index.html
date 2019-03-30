@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Top Page</title>
+    <meta name="author" content="Sam Norton">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon.ico">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+    <link rel="stylesheet" href="css/normalize.css" media="all">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/bootstrap.min" media="all">
+    <link rel="stylesheet" type="text/css" href="css/eorzeaclock.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Raleway:400,200,300,500,700,600,800,900' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+     <script src="js/device.min.js"></script> <!--OPTIONAL JQUERY PLUGIN-->
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/eorzeaclock.js" charset="UTF-8"></script>
+
+    <script type="text/javascript">
+            window.onload = function () { // ページ読み込み時に実行する無名関数
+            updateRead(); // １つ目の関数呼び出し
+            logRead(); // ２つ目の関数呼び出し
+        }
+
+        function updateRead(){
+            var xmlHttp;
+        
+            xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", "./update/write.txt", false);
+            xmlHttp.send(null);
+            var text = xmlHttp.responseText;
+            var node = document.getElementById("update");
+            node.innerText = text;
+        }
+        function logRead(){
+            var xmlHttp;
+            
+            xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", "./text/log.txt", false);
+            xmlHttp.send(null);
+            var text = xmlHttp.responseText;
+            var node = document.getElementById("log");
+            node.innerText = text;
+        }
+    </script>
+
+
+</head>
+
+<body>
+ <section class="big-background">
+        <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=obkNOE-lRf0',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
+        
+        <div class="pattern"></div> 
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                            
+                            <span class="icon-bar"></span>                      
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            The Radar's Co</a>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Top</a></li>
+                            <li><a href="./html/main.php">About us</a></li>
+                            <li><a href="./html/rule.php">Rule of our Free Company</a></li>  
+                            <li><a href="./html/request.php">Member Page</a></li>                            
+                            <li><a href="#">link (閉鎖中)</a></li>
+                            
+                            <!-- https://discord.gg/vAJEU9c -->
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="visible-lg-block" id="eorzeaclock">&nbsp;</div><script type="text/javascript">EorzeaClock()</script>
+                
+                    
+            <div class="big-background-container">
+                    <h1 class="title">Free Company of 
+                    <br/> Radar's Co</h1>
+                    <hr Class="hr">
+            </div>                                                    
+    </section>
+  
+    <div class="wrapper">
+
+    
+    <section class="about-section">
+        <div class="container">        
+            <div class="row">
+                <div class="row row-height">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="panel panel-default">
+                            <div 14 class="panel-heading">
+                                <h4 style="text-align:center;">お知らせ</h4>
+                            </div>
+
+                            <div class="panel-body">
+                            <p>FCの体制が大幅に変わりました</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="about-section-container">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">    
+                                        <h4>トピック</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="menu-inner">
+                                        <p style="font-size:120%; width:100%;" id="update">
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="panel-footer">
+                                        <a id="update_button" href="./update/update_form.php" class="btn btn-default btn-block">注意：更新しかできません</a>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="about-section-container">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4>サイト更新情報</h4>
+                                </div>
+                                <!--  #c0c0c0	 -->
+
+                                <div class="panel-body">
+                                    <div class="menu-inner">
+                                        <p style="font-size:120%; width:100%;" id="log">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="panel-footer" tyle="font-size:80%;">
+                                    <p>リアルタイムで編集されてます</p>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-12 col-md-12" id="col_inner">
+                        <h2 class="about-section-title" style="text-align: center;">メンバーが撮ったスクリーンショットです</h2>
+                        <hr />
+                            <div class="col-xs-12 col-sm-4 col-md-4" id="col_inner">
+                                <div class="well well-sm">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <object data="./images/cal1.png" type="image/gif" class="embed-responsive-item"></object>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-4 col-md-4" id="col_inner">
+                                <div class="well well-sm">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <object data="./images/cal2.png" type="image/gif" class="embed-responsive-item"></object>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-4 col-md-4" id="col_inner">
+                                <div class="well well-sm">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <object data="./images/cal3.png" type="image/gif" class="embed-responsive-item"></object>
+                                    </div>
+                                </div>   
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-6 col-md-6" id="col_inner">
+                                <div class="well well-sm">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <object data="./images/cal4.png" type="image/gif" class="embed-responsive-item"></object>
+                                    </div>
+                                </div>   
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-6 col-md-6" id="col_inner">
+                                <div class="well well-sm">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <object data="./images/cal5.png" type="image/gif" class="embed-responsive-item"></object>
+                                    </div>
+                                </div>   
+                            </div>                                
+                    </div>
+
+
+
+                    <div class="col-xs-12 col-sm-12 col-md-12" id="col_inner">
+                            <h2 class="about-section-title" style="text-align: center;">About the Radar's Co</h2>
+                                    <hr />
+                            <p style="font-size: 140%;">
+                                <br>私達はライトユーザーでもハイエンドコンテンツへ行くユーザでもありません。
+                                <br>自主的に行動し、他人の教えてくれたことは積極的に学ぶ、それこそが他人に迷惑をかけないことだと理解しています。
+                                <br>私達は他人を批判することはしません、仲間を尊重し、気楽にできる環境を提供します。
+                            </p>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+    </section>
+            
+
+    <section class="small-background-section">
+        <div class="pattern"></div>
+            <div class="small-background-container">
+                <h2 class="small-background-title"><span>The Social Account</span></h2>
+                <ul class="socials">
+                <li><a href="https://twitter.com/co_radar" target="_blank"><i class="fa fa-twitter-square fa-5x"></i></a></li>
+                </ul>
+            </div>
+    </section>
+</div>    
+</body>
+</html>

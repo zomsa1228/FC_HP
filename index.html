@@ -45,7 +45,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/eorzeaclock.js" charset="UTF-8"></script>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
             window.onload = function () { // ページ読み込み時に実行する無名関数
             updateRead(); // １つ目の関数呼び出し
             logRead(); // ２つ目の関数呼び出し
@@ -71,7 +71,7 @@
             var node = document.getElementById("log");
             node.innerText = text;
         }
-    </script>
+    </script> -->
 
 
 </head>
@@ -146,13 +146,12 @@
                                 </div>
                                 <div class="panel-body">
                                     <div class="menu-inner">
-                                        <p id="update">
-                                        </p>
+                                        <iframe id="memo" class="embed-responsive-item" src="https://docs.google.com/document/d/e/2PACX-1vSeUKTWX3hvotS4CGpwsOux060yuq3USouXHSsv_FEXr6lp9RITH1yep2ErxjSEH4NnEV4fdNA5APnu/pub?embedded=true"></iframe>
                                     </div>
+                                    <a id="update_button" href="https://docs.google.com/document/d/11KeT18L9_Ht3btMqwVEoLBPW8h46yk3azLB594SVrg4/edit?usp=sharing" target="_blank" class="btn btn-default btn-block">ココから編集可能です</a> 
                                 </div>
-
                                 <!-- <div class="panel-footer">
-                                        <a id="update_button" href="#" class="btn btn-default btn-block">現在編集できなくしてます</a>
+                                        
                                 </div> -->
                             </div>    
                         </div>
@@ -170,6 +169,7 @@
                                     <div class="menu-inner">
                                         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMzYdlHnRC8joteuv_x0pQKtSvQvw_6rbXZ3GQ5B2yJGzJIg/viewform?embedded=true" width="640" height="590" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
                                     </div>
+                                    <p>内容はFCのホームページ管理者Roimy_Zomsaへ伝わります</p>
                                 </div>
                                 <!-- <div class="panel-footer" tyle="font-size:80%;">
                                     <p>リアルタイムで編集されてます</p>
@@ -182,7 +182,7 @@
                         <h2 class="about-section-title" style="text-align: center;">メンバーが撮ったスクリーンショットです</h2>
                         <hr />
                             <div class="col-xs-12 col-sm-4 col-md-4" id="col_inner">
-                                <div class="well well-sm">
+                                <div id=col_inder_in class="well well-sm">
                                         <div class="embed-responsive embed-responsive-16by9">
                                             <object data="./images/cal1.png" type="image/gif" class="embed-responsive-item"></object>
                                         </div>
@@ -191,7 +191,7 @@
                             </div>
 
                             <div class="col-xs-12 col-sm-4 col-md-4" id="col_inner">
-                                <div class="well well-sm">
+                                <div id=col_inder_in class="well well-sm">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <object data="./images/cal2.png" type="image/gif" class="embed-responsive-item"></object>
                                     </div>
@@ -199,7 +199,7 @@
                             </div>
                             
                             <div class="col-xs-12 col-sm-4 col-md-4" id="col_inner">
-                                <div class="well well-sm">
+                                <div id=col_inder_in class="well well-sm">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <object data="./images/cal3.png" type="image/gif" class="embed-responsive-item"></object>
                                     </div>
@@ -207,7 +207,7 @@
                             </div>
                             
                             <div class="col-xs-12 col-sm-6 col-md-6" id="col_inner">
-                                <div class="well well-sm">
+                                <div id=col_inder_in class="well well-sm">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <object data="./images/cal4.png" type="image/gif" class="embed-responsive-item"></object>
                                     </div>
@@ -215,7 +215,7 @@
                             </div>
                             
                             <div class="col-xs-12 col-sm-6 col-md-6" id="col_inner">
-                                <div class="well well-sm">
+                                <div id=col_inder_in class="well well-sm">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <object data="./images/cal5.png" type="image/gif" class="embed-responsive-item"></object>
                                     </div>

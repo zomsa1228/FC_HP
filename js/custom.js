@@ -20,7 +20,7 @@
 */
     /*  IF YOU WANT TO USE DEVICE.JS TO DETECT THE VIEWPORT AND MANIPULATE THE OUTPUT  */
 
-        //Device.js will check if it is Tablet or Mobile - http://matthewhudson.me/projects/device.js/
+        //Device.js will check if it is Tablet or Mobile - https://matthewhudson.me/projects/device.js/
         if (!device.tablet() && !device.mobile()) {
             $(".player").mb_YTPlayer();
         } else {

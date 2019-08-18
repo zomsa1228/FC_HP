@@ -53,8 +53,8 @@ $iflychat_code = $iflychat->getHtmlCode();
     <link rel="stylesheet" href="../css/bootstrap.min" media="all">
     <link rel="stylesheet" type="text/css" href="../css/eorzeaclock.css">
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Raleway:400,200,300,500,700,600,800,900' rel='stylesheet' type='text/css'>
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Raleway:400,200,300,500,700,600,800,900' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 
     <script src="../js/jquery-1.11.1.min.js"></script>
@@ -200,7 +200,7 @@ $iflychat_code = $iflychat->getHtmlCode();
                                         <hr style="padding:0; margin:0;">
 
                                         <div class="panel-body">
-                                        <a href="http://ff14housing.com/" target="_blank"><i class="glyphicon glyphicon-book" aria-hidden="true"></i>エリオネス</a>
+                                        <a href="https://ff14housing.com/" target="_blank"><i class="glyphicon glyphicon-book" aria-hidden="true"></i>エリオネス</a>
                                         </div>
 
                                     </div>                                
@@ -247,7 +247,7 @@ $iflychat_code = $iflychat->getHtmlCode();
 
                             ハウジングデータベース
                             FF14 ハウジング
-                            http://ff14housing.com/
+                            https://ff14housing.com/
 
                             世界観について
                             FF14 Online Wiki
@@ -263,14 +263,14 @@ $iflychat_code = $iflychat->getHtmlCode();
 
                             おすすめツールサイト
                             FF14俺tools
-                            http://ff14moo.moo.jp/
+                            https://ff14moo.moo.jp/
 
                             むーむーのネタ帳
                             https://ffxiv.es.exdreams.net/
 
                             ブログ系
                             一撃確殺SS日記
-                            http://sumimarudan.blog7.fc2.com/ -->
+                            https://sumimarudan.blog7.fc2.com/ -->
 
                         
 
@@ -288,20 +288,20 @@ $iflychat_code = $iflychat->getHtmlCode();
                                 </tr>
                                 <tr>
                                     <th>MANA VC LS</th>
-                                    <td><a href="http://jp.finalfantasyxiv.com/lodestone/character/9746748/blog/2969450/" target="_blank">
-                                        <img width="15px" src="http://img.finalfantasyxiv.com/lds/pc/global/images/favicon.ico?1490749553">
+                                    <td><a href="https://jp.finalfantasyxiv.com/lodestone/character/9746748/blog/2969450/" target="_blank">
+                                        <img width="15px" src="https://img.finalfantasyxiv.com/lds/pc/global/images/favicon.ico?1490749553">
                                         Loadstone</td>
                                 </tr>
                                 <tr>
                                     <th>FF Likes</th>
-                                    <td><a href="http://jp.finalfantasyxiv.com/lodestone/character/9746748/blog/2729555/" target="_blank">
-                                        <img width="15px" src="http://img.finalfantasyxiv.com/lds/pc/global/images/favicon.ico?1490749553">
+                                    <td><a href="https://jp.finalfantasyxiv.com/lodestone/character/9746748/blog/2729555/" target="_blank">
+                                        <img width="15px" src="https://img.finalfantasyxiv.com/lds/pc/global/images/favicon.ico?1490749553">
                                         Loadstone</td>
                                 </tr>
                                 <tr>
                                     <th>Our_FC</th>
-                                    <td><a href="http://jp.finalfantasyxiv.com/lodestone/freecompany/9227453424017114358/" target="_blank">
-                                        <img width="15px" src="http://img.finalfantasyxiv.com/lds/pc/global/images/favicon.ico?1490749553">
+                                    <td><a href="https://jp.finalfantasyxiv.com/lodestone/freecompany/9227453424017114358/" target="_blank">
+                                        <img width="15px" src="https://img.finalfantasyxiv.com/lds/pc/global/images/favicon.ico?1490749553">
                                         Loadstone</td>
 
                                 </tr>

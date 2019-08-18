@@ -34,8 +34,8 @@
     <link rel="stylesheet" href="css/bootstrap.min" media="all">
     <link rel="stylesheet" type="text/css" href="css/eorzeaclock.css">
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Raleway:400,200,300,500,700,600,800,900' rel='stylesheet' type='text/css'>
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Raleway:400,200,300,500,700,600,800,900' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 
     <script src="js/jquery-1.11.1.min.js"></script>
@@ -52,22 +52,22 @@
         }
 
         function updateRead(){
-            var xmlHttp;
+            var xmlhttps;
         
-            xmlHttp = new XMLHttpRequest();
-            xmlHttp.open("GET", "./update/write.txt", false);
-            xmlHttp.send(null);
-            var text = xmlHttp.responseText;
+            xmlhttps = new XMLhttpsRequest();
+            xmlhttps.open("GET", "./update/write.txt", false);
+            xmlhttps.send(null);
+            var text = xmlhttps.responseText;
             var node = document.getElementById("update");
             node.innerText = text;
         }
         function logRead(){
-            var xmlHttp;
+            var xmlhttps;
             
-            xmlHttp = new XMLHttpRequest();
-            xmlHttp.open("GET", "./text/log.txt", false);
-            xmlHttp.send(null);
-            var text = xmlHttp.responseText;
+            xmlhttps = new XMLhttpsRequest();
+            xmlhttps.open("GET", "./text/log.txt", false);
+            xmlhttps.send(null);
+            var text = xmlhttps.responseText;
             var node = document.getElementById("log");
             node.innerText = text;
         }
@@ -75,12 +75,11 @@
 
 
 </head>
-
 <body>
  <section class="big-background">
-        <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=obkNOE-lRf0',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>       
-        <div class="pattern"></div> 
-        <nav class="navbar navbar-default">
+    <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=obkNOE-lRf0',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>       
+        <div class="pattern"></div>
+            <nav class="navbar navbar-default"> 
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -102,17 +101,13 @@
                             <li><a href="#">Rule of our Free Company (工事中)</a></li>  
                             <li><a href="#">Member Page (工事中)</a></li>                            
                             <li><a href="#">link (工事中)</a></li>
-                            
-                            <!-- https://discord.gg/vAJEU9c -->
-                            
                         </ul>
                     </div>
                 </div>
             </nav>
 
             <div class="visible-lg-block" id="eorzeaclock">&nbsp;</div><script type="text/javascript">EorzeaClock()</script>
-                
-                    
+            
             <div class="big-background-container">
                     <h1 class="title">Free Company of 
                     <br/> Radar's Co</h1>
@@ -144,15 +139,14 @@
                                 <div class="panel-heading">    
                                         <h4>トピック</h4>
                                 </div>
-                                <div class="panel-body">
-                                    <div class="menu-inner">
-                                        <iframe id="memo" class="embed-responsive-item" src="https://docs.google.com/document/d/e/2PACX-1vSeUKTWX3hvotS4CGpwsOux060yuq3USouXHSsv_FEXr6lp9RITH1yep2ErxjSEH4NnEV4fdNA5APnu/pub?embedded=true"></iframe>
+                                    <div class="panel-body">
+                                        <div class="menu-inner">
+                                            <iframe id="memo" class="embed-responsive-item" src="https://docs.google.com/document/d/e/2PACX-1vSeUKTWX3hvotS4CGpwsOux060yuq3USouXHSsv_FEXr6lp9RITH1yep2ErxjSEH4NnEV4fdNA5APnu/pub?embedded=true"></iframe>
+                                        </div>
+                                    <div class="panel-footer">
+                                            <a id="update_button" href="https://docs.google.com/document/d/11KeT18L9_Ht3btMqwVEoLBPW8h46yk3azLB594SVrg4/edit?usp=sharing" target="_blank" class="btn btn-default btn-block">ココから編集可能です</a> 
                                     </div>
-                                    <a id="update_button" href="https://docs.google.com/document/d/11KeT18L9_Ht3btMqwVEoLBPW8h46yk3azLB594SVrg4/edit?usp=sharing" target="_blank" class="btn btn-default btn-block">ココから編集可能です</a> 
                                 </div>
-                                <!-- <div class="panel-footer">
-                                        
-                                </div> -->
                             </div>    
                         </div>
                     </div>
@@ -169,11 +163,10 @@
                                     <div class="menu-inner">
                                         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMzYdlHnRC8joteuv_x0pQKtSvQvw_6rbXZ3GQ5B2yJGzJIg/viewform?embedded=true" width="640" height="590" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
                                     </div>
+                                </div>
+                                <div class="panel-footer" tyle="font-size:80%;">
                                     <p>内容はFCのホームページ管理者Roimy_Zomsaへ伝わります</p>
                                 </div>
-                                <!-- <div class="panel-footer" tyle="font-size:80%;">
-                                    <p>リアルタイムで編集されてます</p>
-                                </div> -->
                             </div>  
                         </div>
                     </div>

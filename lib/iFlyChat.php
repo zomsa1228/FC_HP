@@ -39,7 +39,7 @@ class iFlyChat
         $this->settings = array(
             'base' => '',
             'version' => 'PHP-2.1.3',
-            'HOST' => 'http://api.iflychat.com',
+            'HOST' => 'https://api.iflychat.com',
             'A_HOST' => 'https://api.iflychat.com',
             'PORT' => 80,
             'A_PORT' => 443,
@@ -95,19 +95,19 @@ class iFlyChat
     }
 
     /*
-     * Method for sending HTTP Request
+     * Method for sending https Request
      */
-    private function extendedHttpRequest($url, $data_json)
+    private function extendedhttpsRequest($url, $data_json)
     {
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+        curl_setopt($ch, CURLOPT_httpsHEADER, array('Content-Type: application/json'));
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data_json);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($ch);
-        $res_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $res_code = curl_getinfo($ch, CURLINFO_https_CODE);
         $result = json_decode($result);
         $result->code = $res_code;
         curl_close($ch);
@@ -188,7 +188,7 @@ class iFlyChat
       $data['chat_role'] = $chat_role;
 
         $data = json_encode($data);
-        $result = $this->extendedHttpRequest($this->settings['A_HOST'] . ':' . $this->settings['A_PORT'] . '/api/1.1/token/generate', $data);
+        $result = $this->extendedhttpsRequest($this->settings['A_HOST'] . ':' . $this->settings['A_PORT'] . '/api/1.1/token/generate', $data);
         if ($result->code == 200) {
           if($this->settings['session_caching']){
             $_SESSION['token'] = $result->key;
@@ -204,7 +204,7 @@ class iFlyChat
      */
     private function checkSSL()
     {
-        return (!empty($_SERVER) && !empty($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] != "off"));
+        return (!empty($_SERVER) && !empty($_SERVER['https']) && ($_SERVER['https'] != "off"));
     }
 
     public function getMessageThread($id1 = "1", $id2 = "2")
@@ -215,7 +215,7 @@ class iFlyChat
             'uid2' => $id2,
             'api_key' => $this->settings['api_key'],
         ));
-        $result = $this->extendedHttpRequest($this->settings['A_HOST'] . ':' . $this->settings['A_PORT'] . '/q/', $data);
+        $result = $this->extendedhttpsRequest($this->settings['A_HOST'] . ':' . $this->settings['A_PORT'] . '/q/', $data);
         $q = json_decode($result->data);
         return $q;
     }
@@ -227,7 +227,7 @@ class iFlyChat
             'uid' => $id1,
             'api_key' => $this->settings['api_key'],
         ));
-        $result = $this->extendedHttpRequest($this->settings['A_HOST'] . ':' . $this->settings['A_PORT'] . '/r/', $data);
+        $result = $this->extendedhttpsRequest($this->settings['A_HOST'] . ':' . $this->settings['A_PORT'] . '/r/', $data);
         $q = json_decode($result->data);
         return $q;
     }
@@ -241,7 +241,7 @@ class iFlyChat
         $data['settings']['port'] = (($this->checkSSL()) ? ($this->settings['A_PORT']) : ($this->settings['PORT']));
         $data = json_encode($data);
 
-        $result = $this->extendedHttpRequest($this->settings['A_HOST'] . ':' . $this->settings['A_PORT'] . '/m/v1/app/', $data);
+        $result = $this->extendedhttpsRequest($this->settings['A_HOST'] . ':' . $this->settings['A_PORT'] . '/m/v1/app/', $data);
 
         return $result->data;
     }
@@ -253,7 +253,7 @@ class iFlyChat
         );
         $data = json_encode($data);
         if (!empty($_SESSION['token']) && !empty($_SESSION['token'])) {
-            $result = $this->extendedHttpRequest($this->settings['A_HOST'] . ':' . $this->settings['A_PORT'] . '/api/1.1/token/'
+            $result = $this->extendedhttpsRequest($this->settings['A_HOST'] . ':' . $this->settings['A_PORT'] . '/api/1.1/token/'
                 . $_SESSION['token'] . '/delete', $data);
             if ($result->code == 200) {
                 unset($_SESSION['token']);

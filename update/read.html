@@ -1,20 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
 
 <html lang="ja">
 <head>
-<meta http-equiv="Content-Type" Content="text/html;charset=UTF-8">
-<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta https-equiv="Content-Type" Content="text/html;charset=UTF-8">
+<meta https-equiv="Content-Script-Type" content="text/javascript">
 
 <title>読み込みテスト</title>
 
 <script type="text/javascript">
 function loadText(){
-    var xmlHttp;
+    var xmlhttps;
 
-    xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", "./write.txt", false);
-    xmlHttp.send(null);
-    var text = xmlHttp.responseText;
+    xmlhttps = new XMLhttpsRequest();
+    xmlhttps.open("GET", "./write.txt", false);
+    xmlhttps.send(null);
+    var text = xmlhttps.responseText;
     var node = document.getElementById("resDiv");
     node.innerText = text;
 }

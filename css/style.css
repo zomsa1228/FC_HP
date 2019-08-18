@@ -111,6 +111,20 @@ ul li {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
+
+.menu-inner::-webkit-scrollbar{ 
+    width: 15px;
+}
+.menu-inner::-webkit-scrollbar-thumb{ 
+    background: #F70841;
+    border-radius: 10px;
+}
+.menu-inner::-webkit-scrollbar-track-piece:start{
+    background: #ffa5ba;
+}
+.menu-inner::-webkit-scrollbar-track-piece:end{
+    background: #fff;
+}
   
   /* .menu-inner{
     overflow-y: scroll;

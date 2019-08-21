@@ -139,6 +139,17 @@ ul li {
 .menu-inner::-webkit-scrollbar-track-piece:end{
     background: #fff;
 }
+
+#panel-content{
+ font-size: 15px;
+}
+
+#panel-heading{
+    text-align: center;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
   
   /* .menu-inner{
     overflow-y: scroll;
